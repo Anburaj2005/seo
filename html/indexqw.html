@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doughnut Chart with Centered Text</title>
+    <style>
+        .chart-container {
+            width: 20%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <canvas id="myDoughnutChart"></canvas>
+    </div>
+
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Create the doughnut chart
+        const ctx = document.getElementById('myDoughnutChart').getContext('2d');
+
+        const myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Completed', 'Remaining'],
+                datasets: [{
+                    label: 'My Dataset',
+                    data: [50, 50,34,45,10], // Example data
+                    backgroundColor: ['#4caf50', '#e0e0e0',"#0000","#141953",'#35356'],
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    tooltip: {
+                        enabled: false
+                    },
+                    legend: {
+                        display: false
+                    },
+                    // Custom plugin to draw text
+                    datalabels: {
+                        display: false
+                    }
+                }
+            },
+            plugins: [{
+                id: 'custom-text',
+                beforeDraw: (chart) => {
+                    const ctx = chart.ctx;
+                    const { chartArea, data } = chart;
+                    const { width, height } = chartArea;
+
+                    ctx.save();
+                    ctx.font = 'bold 24px Arial';
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+
+                    // Get the center position
+                    const centerX = (chartArea.left + chartArea.right) / 2;
+                    const centerY = (chartArea.top + chartArea.bottom) / 2;
+
+                    // Draw the text in the center of the doughnut
+                    ctx.fillStyle = '#333'; // Text color
+                    ctx.fillText('Data agency', centerX, centerY - 10); // Adjust position if needed
+                    ctx.font = 'italic 16px Arial';
+                    ctx.fillText('Completed', centerX, centerY + 10); // Adjust position if needed
+
+                    ctx.restore();
+                }
+            }]
+        });
+    </script>
+</body>
+</html>

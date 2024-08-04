@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doughnut Chart with Text Inside</title>
+    <style>
+        /* Styling the chart container */
+        .chart-container {
+            position: relative;
+            width: 20%;
+            margin: auto;
+        }
+
+        /* Centering text inside the chart */
+        .chart-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 10px;
+            color: coral
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chart-container">
+        <canvas id="myDoughnutChart"></canvas>
+        <div class="chart-text">
+            <h1>Data agency related</h1>
+        </div>
+    </div>
+    <div class="chart-container">
+        <canvas id="myDoughnutChart"></canvas>
+        <div class="chart-text">
+            <h1>Data agency related</h1>
+        </div>
+    </div>
+
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // JavaScript to create the doughnut chart
+        const ctx = document.getElementById('myDoughnutChart').getContext('2d');
+        const myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Completed', 'Remaining'],
+                datasets: [{
+                    label: 'My Dataset',
+                    data: [50, 50], // Example data
+                    backgroundColor: ['#4caf50', '#e0e0e0'],
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    tooltip: {
+                        enabled: false
+                    },
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

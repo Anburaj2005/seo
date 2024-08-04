@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        thead>tr>td {
+            background-color: blue;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            /* Optional: Max width for larger screens */
+            margin: auto;
+            /* Center the container */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: red;
+            text-align: center;
+            font-weight: 900;
+            padding: 20px;
+            /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for better readability */
+            border-radius: 8px;
+            /* Optional: Rounded corners */
+            width: 90%;
+            /* Responsive width */
+            max-width: 600px;
+            /* Optional: Max width for larger screens */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row">
+            <div class="col-xl-7 col-xxl-8 shadow">
+
+                <div class="row ">
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <td>batting</td>
+                                    <td>bowling</td>
+                                    <td>wickest</td>
+                                    <td>wickest</td>
+                                    <td>wickest</td>
+                                    <td>wickest</td>
+                                    <td>wickest</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>13288</td>
+                                    <td>153</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>13288</td>
+                                    <td>153</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>13288</td>
+                                    <td>153</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>13288</td>
+                                    <td>153</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>13288</td>
+                                    <td>153</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>13288</td>
+                                    <td>153</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>13288</td>
+                                    <td>153</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                    <td>56</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-end justify-content-end ">
+
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </div>
+            <div class="col-xl-5 col-xxl-4">
+                <div class="row ">
+                    <div class="col-xl-12 col-md-6 offset-md-3 d-flex justify-content-end offset-xl-0">
+                        <div class="image-container">
+                            <img src="./02.jpg" alt="Background Image" class="mx-auto">
+                            <div class="overlay-text">
+                                <h1 class="fw-bold">contactus</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-6 d-flex align-items-center justify-content-end">
+
+
+           </div>
+            <div class="col-xl-6 ">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam porro maiores quis? Fugit, fugiat at. Illum corporis est perferendis aut nulla quas qui illo unde repudiandae ea sapiente tempora earum pariatur doloremque ex minus sint itaque reprehenderit rerum esse, explicabo dignissimos et laudantium nisi? Porro nisi sequi atque tempore maxime inventore officia adipisci, quo a nostrum ab autem aperiam at soluta totam est cum voluptatibus, illum debitis! Nesciunt tenetur, assumenda delectus aperiam facilis soluta eum est dignissimos eius veniam molestias ut? Voluptatem nulla debitis aliquid id doloremque at voluptate beatae, recusandae impedit, sapiente natus alias. Dignissimos distinctio id libero, eveniet temporibus fugiat error sequi sed est? Ratione iste sapiente facere cum illo natus temporibus exercitationem! Eligendi, id dolorem, quos reprehenderit fugiat impedit non corporis sint unde quas asperiores, quia mollitia veritatis voluptas facere ipsum quam delectus numquam eius minus saepe! Nemo, nam quibusdam cumque quasi optio libero quis quas recusandae! Provident ullam distinctio nihil impedit ipsum qui omnis aliquid illum soluta, aut, voluptatem, praesentium obcaecati? Distinctio laudantium officia perspiciatis provident et, similique, dicta nobis corrupti quae beatae esse, commodi illo ut officiis sed quia vero tenetur cupiditate quas eum mollitia earum! Nesciunt ex dolores dolorum odio magnam impedit quae, delectus praesentium quidem quam sequi ipsam omnis cupiditate eaque saepe earum animi sint. Odio maxime suscipit repellat, quam impedit a tempora placeat, soluta laborum minima rem aliquid mollitia facere deleniti rerum dolores assumenda aperiam explicabo!</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
