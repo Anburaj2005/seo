@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More-opportunites</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/footable.css" rel="stylesheet" />
+
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <section class="header ">
+        <div class="login after-login">
+
+        </div>
+
+        <nav class="navbar navbar-expand-xl navbar-light bg-white py-0">
+            <div class="container-fluid">
+
+                <button class="hamburger border-0 bg-white d-lg-none" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.webp" alt="mysetaside" class="" width="155" height="" />
+                </a>
+
+                <div class="row d-flex justify-content-xl-end ">
+                    <div class="col-auto pt-3 pt-lg-0 pe-0 ">
+                        <nav class=" navbar-expand">
+                            <div class="collapse navbar-collapse" id="">
+                                <ul class=" me-auto mb-lg-0 ps-0  list-unstyled ">
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            John Doe
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-regular fa-user pe-3"></i> View Company
+                                                    Profile </a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-receipt pe-4"></i>Account</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#"><span><i
+                                                            class="fa-regular fa-circle-question pe-3"></i>
+                                                        Help</span></a></li>
+                                            <li><a class="dropdown-item" href="#"><span> <i
+                                                            class="fa-solid fa-blog pe-3"></i>
+                                                        Blog</span></a></li>
+                                            <li><a class="dropdown-item" href="#"><span> <i
+                                                            class="fa-solid fa-arrow-right-from-bracket pe-3"></i>
+                                                        Logout</span></a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-auto d-flex align-items-center ps-0">
+                        <img src="./images/loging-image.png" class="rounded-circle" alt="..." width="25px"
+                            height="30px">
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <div class="main-content">
+
+        <aside class="sidebar border ">
+            <i class="fa fa-times close-sidebar d-lg-none d-flex justify-content-end pe-4 pt-4" aria-hidden="true"></i>
+            <ul class="list-unstyled mt-lg-4 ">
+
+                <li><i class="fa-solid fa-newspaper pe-3"></i>
+                    <span> Dashboard</span>
+                </li>
+                <li><i class="fa-solid fa-magnifying-glass pe-3"></i>
+                    <span>Search Opportunities</span>
+                </li>
+                <li><i class="fa-solid fa-envelope pe-3"></i>
+                    <span>My Opportunities</span>
+                </li>
+                <li> <i class="fa-solid fa-school pe-3"></i>
+                    <span>Agencies</span>
+                </li>
+                <li><i class="fa-solid fa-compass pe-3"></i>
+                    <span>Team Partners</span>
+                </li>
+                <li> <i class="fa-solid fa-comment pe-3"></i>
+                    <span>Chat Room</span>
+                </li>
+                <li> <i class="fa-regular fa-life-ring pe-3"></i>
+
+                    <span>Help Center</span>
+                </li>
+                <li><i class="fa-solid fa-gear pe-3"></i>
+                    <span>Settings</span>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <section class="content pt-32 contract-content">
+
+            <div class="container-fluid border bg-white py-5 point-contact">
+                <div class="row ">
+                    <div class="col-12">
+                        <h4 class="fw-bold">Search Federal Government Contracts</h4>
+                        <p class="py-3">This page shows you full details of an opportunity and allows you to prepare and
+                            submit responses
+                            to
+                            the government agencies</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 pt-4">
+                        <p>NAICS Code</p>
+                        <select class="form-select required select" aria-label="Default select example" id="" placeholder="Search by NAICS"  >
+                            <option value selected>Search by NAICS</option>
+                    
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="text-danger errorMessage  pt-3">Please Select NAICS Code</div>
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <p>Agency</p>
+
+                        <select class="form-select required select" aria-label="Default select example">
+                   
+                            <option value selected="">Search by Agency</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                        <div class="text-danger errorMessage  pt-3">Please Select Agency</div>
+
+                    </div>
+
+                </div>
+                <div class="row  py-4">
+                    <div class="col-md-6 pt-3">
+                        <p>Solicitation ID</p>
+                        <input name="Due Date" type="text" class="form-control  required">
+                        <div class="text-danger errorMessage  pt-3">Please Enter Solicitation ID</div>
+
+
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <p>Posted Date</p>
+                        <input name="Posted Date" data-date-format="MM/dd/yyyy" max="2024-07-24" type="date"
+                            class="form-control calendar valid required">
+                        <div class="text-danger errorMessage  pt-3">Please Enter Posted Date</div>
+
+
+                        <p class="text-end pt-4"><a href=""><i class="fa-solid fa-table-columns pe-2"></i><span
+                                    id="myButton">More Filters </span> </a></p>
+                    </div>
+
+                </div>
+
+                <div class="row" id="myDiv">
+                    <div class="col-md-6 ">
+                        <p>Due Date</p>
+
+                        <input name="Due Date" data-date-format="MM/dd/yyyy" max="2024-07-24" type="date"
+                            class="form-control calendar valid required">
+                        <div class="text-danger errorMessage  pt-3">Please Enter Due Date</div>
+
+                    </div>
+                    <div class="col-md-6 pt-4 pt-md-0">
+                        <p>Posting Type</p>
+                        <select class="form-select required select" aria-label="Default select example">
+                            <option value selected>Posting Type</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="text-danger errorMessage  pt-3">Please Enter Posting Type</div>
+
+                    </div>
+                </div>
+                <div class="row  pt-4" id="myDiv1">
+                    <div class="col-md-6">
+                        <p>Full Text Keyword Search in Synopsis/Solicitation Title</p>
+                        <input name="Due Date" type="text" class="form-control  required">
+                        <div class="text-danger errorMessage  pt-3">Please Enter Synopsis/Solicitation Title</div>
+                      
+                    </div>
+                </div>
+
+                <div class="row pt-4">
+                    <div class="col-12 text-center">
+                        <button class="search-btn px-5 py-2" id="submitButton"> <i
+                                class="fa-solid fa-magnifying-glass pe-2"></i>Search</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="container-flui pt-5">
+                <div class="row ps-0">
+                    <div class="col-12">
+                        <h5>Opportunity</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="  bg-white px-4">
+                    <div class="row border ">
+                        <div class=" col-lg-12 col-xl-12 col-xxl-12 py-4">
+                            <div class="row">
+                                <div class="col-10">
+                                    <p class="title-color fw-bold">DEFENSE LOGISTICS AGENCY</p>
+    
+                                </div>
+                                <div class="col-2 text-end">
+                                    <button class="border-0 bg-white"><i class="fa-regular fa-circle-xmark"></i>
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="row py-3">
+    
+                                <div class="col-12 col-xl-4">
+                                    <p>Award Number:<span class="fw-bold"> 80MSFC24R0012</span></p>
+                                </div>
+                                <div class="col-12 col-xl-4 py-3 py-xl-0">
+                                    <p>
+                                        Solicitation ID:<span class="fw-bold"> 80MSFC24R0012</span></p>
+                                </div>
+                                <div class="col-12 col-xl-4 text-xl-end">
+                                    <p><span><i class="fa-regular fa-calendar text-danger "></i></span> Response
+                                        Due: Mar 22, 2024</p>
+                                </div>
+    
+                            </div>
+                            <div class="border-bottom">
+    
+                            </div>
+                            <div class="row py-3">
+                                <p class="fw-bold ">SYNOPSIS:</p>
+                                <p class="py-2">NASA Technical Standards System (NTSS)</p>
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-md-6 col-12 ">
+                                    <button class="save-btn px-3 py-1 me-3 "> <i class="fa-regular fa-floppy-disk pe-2"></i>
+                                        Save</button>
+                                    <button class="btn fav-btn px-3 py-1 fw-bold"><i
+                                            class="fa-solid fa-share-nodes pe-2"></i>
+                                        Share</button>
+    
+    
+                                </div>
+                                <div
+                                    class="col-md-6 col-12 pt-32 pt-md-0  d-flex align-items-end d-flex justify-content-md-end">
+                                    <p><a href=""><i class="fa-solid fa-table-columns pe-2"></i>Read full
+                                            Oportunity</a></p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="row border">
+                        <div class=" col-lg-12 col-xl-12 col-xxl-12   py-4">
+                            <div class="row">
+                                <div class="col-10">
+                                    <p class="title-color fw-bold">DEFENSE LOGISTICS AGENCY</p>
+    
+                                </div>
+                                <div class="col-2 text-end">
+                                    <button class="border-0 bg-white"><i class="fa-regular fa-circle-xmark"></i>
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="row py-3">
+    
+                                <div class="col-12 col-xl-4">
+                                    <p>Award Number:<span class="fw-bold"> 80MSFC24R0012</span></p>
+                                </div>
+                                <div class="col-12 col-xl-4 py-3 py-xl-0">
+                                    <p>
+                                        Solicitation ID:<span class="fw-bold"> 80MSFC24R0012</span></p>
+                                </div>
+                                <div class="col-12 col-xl-4 text-xl-end">
+                                    <p><span><i class="fa-regular fa-calendar text-danger "></i></span> Response
+                                        Due: Mar 22, 2024</p>
+                                </div>
+    
+                            </div>
+                            <div class="border-bottom">
+    
+                            </div>
+                            <div class="row py-3">
+                                <p class="fw-bold ">SYNOPSIS:</p>
+                                <p class="py-2">NASA Technical Standards System (NTSS)</p>
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-md-6 col-12 ">
+                                    <button class="save-btn px-3 py-1 me-3"> <i class="fa-regular fa-floppy-disk pe-2"></i>
+                                        Save</button>
+                                    <button class="btn fav-btn px-3 py-1 fw-bold"><i
+                                            class="fa-solid fa-share-nodes pe-2"></i>
+                                        Share</button>
+    
+    
+                                </div>
+    
+                                <div
+                                    class="col-md-6 col-12 pt-32 pt-md-0  d-flex align-items-end d-flex justify-content-md-end">
+                                    <p><a href=""><i class="fa-solid fa-table-columns pe-2"></i>Read full
+                                            Oportunity</a></p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="row">
+                        <div class="col-12 border-top-0 border">
+                            <p class="py-3 text-center"><a href="">Show All<i class="fa-solid fa-arrow-right ps-2"></i></a>
+                            </p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+        
+        </section>
+
+    </div>
+
+    <section class="footer-section footer py-4">
+        <div class="container-fluid">
+            <div class="row py-3">
+
+                <div class="col-xl-6 col-md-9 py-3 py-xl-0 ">
+
+
+                    <ul class="list-unstyled d-flex d-flex flex-column flex-lg-row justify-content-md-between ">
+                        <li><a href=""> Contracts</a></li>
+                        <li><a href=""> Services</a></li>
+                        <li><a href=""> Price List</a></li>
+                        <li><a href=""> FAQ</a></li>
+                        <li><a href=""> Blog</a></li>
+                        <li><a href=""> Resources</a></li>
+                    </ul>
+
+
+
+
+                </div>
+                <div class="col-xl-6">
+                    <ul class="list-unstyled d-flex justify-content-xl-end">
+                        <li> <a href=""> <i class="fa-brands fa-x-twitter fa-xs pe-4"></i></a> </li>
+                        <li> <a href=""><i class="fa-brands fa-facebook-f pe-4"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in pe-4"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-youtube pe-4"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-bottom px-5"></div>
+
+
+
+
+
+
+            <div class="row  pt-4 subfooter">
+
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="row text-start">
+                        <p>Copyright © 2023 MySetAside. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="auto d-flex justify-content-lg-end">
+                        <p class=""><a href="">Sitemap </a> <span class="px-md-1 px-3">|</span><a href="">Refund Policy
+                            </a>
+                            <span class="px-md-1 px-3">|</span>
+                            <a href=""> Terms and Conditions </a> </span><span class="px-md-1 px-3">| </span><a
+                                href="">Privacy
+                                Policy </a>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+</body>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.querySelector('.sidebar');
+    const closeSidebar = document.querySelector('.close-sidebar');
+
+    hamburger.addEventListener('click', () => {
+        const isOpen = sidebar.classList.contains('show-sidebar');
+        if (!isOpen) {
+            sidebar.classList.add('show-sidebar');
+        }
+    });
+
+    closeSidebar.addEventListener('click', () => {
+        sidebar.classList.remove('show-sidebar');
+    });
+
+</script>
+
+
+<script>
+    $(document).ready(function () {
+
+        $("#myDiv").hide();
+        $("#myDiv1").hide();
+        $("#dv-btn").hide();
+
+        $("#myButton").on("click", function (event) {
+            event.preventDefault();
+            if ($("#myDiv").is(":hidden")) {
+
+                $("#myDiv").show();
+                $(this).text("Hide Filters");
+                $("#myDiv1").show();
+                $("#dv-btn").show();
+            } else {
+
+                $("#myDiv").hide();
+                $(this).text("More Filters");
+                $("#myDiv1").hide();
+                $("#dv-btn").hide();
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $(".errorMessage").hide();
+
+        $("#submitButton").click(function (event) {
+            event.preventDefault();
+
+            $(".required").each(function () {
+                var inputField = $(this);
+                var errorMessage = inputField.next(".errorMessage");
+
+                if (inputField.is("select")) {
+
+                    if (inputField.prop("selectedIndex") === 0) {
+                        errorMessage.show();
+                        inputField.css("border", "0.5px solid #AF3131");
+                    } else {
+                        errorMessage.hide();
+                        inputField.css("border", "1px solid #ced4da");
+                    }
+                } else {
+
+                    if (inputField.val() == "") {
+                        errorMessage.show();
+                        inputField.css("border", "0.5px solid #AF3131");
+                    } else {
+                        errorMessage.hide();
+                        inputField.css("border", "1px solid #ced4da");
+                    }
+
+                }
+
+            });
+        });
+    });
+</script>
+</html>

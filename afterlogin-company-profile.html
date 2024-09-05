@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>company-profile</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <section class="header ">
+        <div class="login after-login">
+
+        </div>
+
+        <nav class="navbar navbar-expand-xl navbar-light bg-white py-0">
+            <div class="container-fluid">
+
+                <button class="hamburger border-0 bg-white d-lg-none" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.webp" alt="mysetaside" class="" width="155" height="" />
+                </a>
+
+                <div class="row d-flex justify-content-xl-end ">
+                    <div class="col-auto pt-3 pt-lg-0 pe-0 ">
+                        <nav class=" navbar-expand">
+                            <div class="collapse navbar-collapse" id="">
+                                <ul class=" me-auto mb-lg-0 ps-0  list-unstyled ">
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            John Doe
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-regular fa-user pe-3"></i> View Company
+                                                    Profile </a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-receipt pe-4"></i>Account</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#"><span><i
+                                                            class="fa-regular fa-circle-question pe-3"></i>
+                                                        Help</span></a></li>
+                                            <li><a class="dropdown-item" href="#"><span> <i
+                                                            class="fa-solid fa-blog pe-3"></i>
+                                                        Blog</span></a></li>
+                                            <li><a class="dropdown-item" href="#"><span> <i
+                                                            class="fa-solid fa-arrow-right-from-bracket pe-3"></i>
+                                                        Logout</span></a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-auto d-flex align-items-center ps-0">
+                        <img src="./images/loging-image.png" class="rounded-circle" alt="..." width="25px"
+                            height="30px">
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <div class="main-content">
+
+
+        <aside class="sidebar border ">
+            <i class="fa fa-times close-sidebar d-lg-none d-flex justify-content-end pe-4 pt-4" aria-hidden="true"></i>
+            <ul class="list-unstyled mt-lg-4 ">
+
+                <li><i class="fa-solid fa-newspaper pe-3"></i>
+                    <span> Dashboard</span>
+                </li>
+                <li><i class="fa-solid fa-magnifying-glass pe-3"></i>
+                    <span>Search Opportunities</span>
+                </li>
+                <li><i class="fa-solid fa-envelope pe-3"></i>
+                    <span>My Opportunities</span>
+                </li>
+                <li> <i class="fa-solid fa-school pe-3"></i>
+                    <span>Agencies</span>
+                </li>
+                <li><i class="fa-solid fa-compass pe-3"></i>
+                    <span>Team Partners</span>
+                </li>
+                <li> <i class="fa-solid fa-comment pe-3"></i>
+                    <span>Chat Room</span>
+                </li>
+                <li> <i class="fa-regular fa-life-ring pe-3"></i>
+
+                    <span>Help Center</span>
+                </li>
+                <li><i class="fa-solid fa-gear pe-3"></i>
+                    <span>Settings</span>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+
+        <section class="content pt-64">
+            <div class=" user-shadow px-4 py-5 point-contact">
+                <div class="row">
+                    <div class="col-xl-7">
+                        <h4>Unveil your company profile to unlock potential contract opportunities.</h4>
+                    </div>
+
+                    <div class="col-xl-5 d-flex justify-content-xl-end">
+                        <div class="row pe-0">
+                            <div class="col-auto pe-0">
+                                <p class="pt-32"> <a href="" type="button" class="btn management-btn py-2 col-12">User
+                                        Management</a></p>
+
+                            </div>
+                            <div class="col-auto">
+                                <p class="pt-32"> <a href="" type="button"
+                                        class="btn capabilities-btn col-12" data-bs-target="#popupModal-1" data-bs-toggle="modal">Unsubscribe</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <p>Once you’ve created your company profile, click on “<a href="">User Account </a> ” to complete
+                        any missing
+                        information.</p>
+                </div>
+
+                <div class="row pt-64">
+                    <h5>Company Information</h5>
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-10">
+                        <label for="" class="form-label fw-bold ps-0 "> NAICS Code</label>
+                        <input type="text" class="form-control required" placeholder="Search by NAICS" name="" id="">
+                        <div class="text-danger errorMessage pt-3">Please enter NAICS Code</div>
+                    </div>
+
+
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> Address Line 1</label>
+                                <input type="text" class="form-control required" placeholder="Enter address" name="" id="">
+                        <div class="text-danger errorMessage pt-3">Please enter address</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 pt-32 pt-xl-0">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> Cage Code</label>
+                                <input type="text" class="form-control required" placeholder="Enter Cage Code" name="" id="">
+                        <div class="text-danger errorMessage pt-3">Please enter Cage Code </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> Address Line 2</label>
+                                <input type="text" class="form-control required" placeholder="Search Address Line 2" name=""
+                                    id="">
+                                    <div class="text-danger errorMessage pt-3">Please enter address</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 pt-32 pt-xl-0">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> Year Established</label>
+                                <input type="text" class="form-control required" placeholder="Enter Year Established" name=""
+                                    id="">
+                                    <div class="text-danger errorMessage pt-3">Please enter Year Established</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> City</label>
+                                <input type="text" class="form-control required" placeholder="Enter City" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter City </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 pt-32 pt-xl-0">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> Company POC</label>
+                                <input type="text" class="form-control required" placeholder="Enter Company POC" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter Company POC </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> State</label>
+                                <input type="text" class="form-control required" placeholder="Enter State" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter State</div>
+
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 pt-32 pt-xl-0">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> POC Title</label>
+                                <input type="text" class="form-control required" placeholder="Enter POC Title" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter POC Title</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> Zip Code</label>
+                                <input type="text" class="form-control required" placeholder="Enter Zip Code" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter Zip Code</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 pt-32 pt-xl-0">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> POC Phone Number</label>
+                                <input type="text" class="form-control required" placeholder="Enter POC Phone Number" name=""
+                                    id="">
+                                <div class="text-danger errorMessage pt-3">Please enter POC Phone Number</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> Tax ID</label>
+                                <input type="text" class="form-control required" placeholder="Enter Tax ID" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter Tax ID</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 pt-32 pt-xl-0">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> POC Email ID</label>
+                                <input type="text" class="form-control required" placeholder="Enter POC Email ID" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter POC Email ID</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> DUNS Number</label>
+                                <input type="text" class="form-control required" placeholder="Enter Duns Number" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter Duns Number</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 pt-32 pt-xl-0">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> Website URL</label>
+                                <input type="text" class="form-control required" placeholder="Enter Website URL" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter Website URL</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 "> Capabilities</label>
+                                <input type="text" class="form-control required" placeholder="Enter Capabilities" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter Capabilities</div>
+
+                            </div>
+                            <div class="col-xl-4 col-md-4 col-6  pt-32">
+                                <p class="cap-add-btn" type="button"> Add New</p>
+
+                            </div>
+                        </div>
+
+                        <div class="row pt-32 " id="dvcap">
+                            <div class="col-xl-8" id="deletediv">
+
+
+                                <div class="col-12 form-color  pe-4 py-2 border">
+                                    <p class="fw-bold ps-2">Capabilities</p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-xl-8 item-container">
+
+                                <div class="col-12 border p-2">
+                                    <div class="row">
+                                        <div class="col-8 ">
+                                            <p>Software</p>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end">
+                                            <span class="question"> <i class="fa-regular fa-trash-can"
+                                                    id="deleteButton"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 item-container">
+
+                                <div class="col-12 border p-2">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <p>Software</p>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end">
+                                            <span class="question"> <i class="fa-regular fa-trash-can"
+                                                    id="deleteButton"></i></span>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 pt-32 pt-xl-0">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <label for="" class="form-label fw-bold ps-0 ">NAICS Code</label>
+                                <input type="text" class="form-control required" placeholder="Enter NAICS Code" name="" id="">
+                                <div class="text-danger errorMessage pt-3">Please enter NAICS Code</div>
+
+ 
+                            </div>
+                            <div class="col-xl-4 col-md-4 col-6 pt-32">
+                                <p class="cap-add-btn " type="button"> Add New</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-32">
+                    <div class="col-xl-8">
+
+                        <p data-bs-target="#popupModal" data-bs-toggle="modal" type="button">Capability Statements
+                            <span><i class="fa-solid fa-upload"></i> </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-md-12 d-flex justify-content-center">
+
+                        <p type="button" class="btn account-btn col-6  fw-bold py-2" id="submitButton">UPDATE</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="modal fade " id="popupModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered  ">
+            <div class="modal-content p-4">
+                <div class="modal-header pb-0">
+                    <h6 class="">Upload File</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="row  pt-3">
+                        <p>Choose File and upload</p>
+                    </div>
+                    <div class="capability-bg p-5 mt-3">
+                        <div class="row ">
+                            <p class="text-center"><i class="fa fa-download" aria-hidden="true"></i> </p>
+                            <p class="text-center pt-0">Drop and drag files or <a href="">Browse </a> </p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="input-group opt-select">
+
+                            <span class="input-group-text bg-white border-left-0 search-border pe-0"> </span>
+
+                            <input type="text" class="form-control border-start-0 border-end-0 " aria-label=""
+                                placeholder="Capability Statements">
+                            <span class="input-group-text bg-white search-border " type="button"><i
+                                    class="fa-solid fa-xmark"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="progress mt-1" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="row pt-32">
+                        <div class="input-group opt-select">
+
+                            <span class="input-group-text bg-white border-left-0 search-border pe-0"> </span>
+
+                            <input type="text" class="form-control border-start-0 border-end-0 " aria-label=""
+                                placeholder="Capability Statements">
+                            <span class="input-group-text bg-white search-border " type="button"><i
+                                    class="fa-solid fa-xmark"></i></span>
+                        </div>
+                  
+        
+                    </div>
+                    <div class="progress mt-1" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="row mt-5 pt-5">
+
+                        <div class="col-md-6 offset-md-6 text-end">
+
+                            <a href="" type="button" class="btn account-btn fw-bold px-5 py-1">Upload</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="popupModal-1" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered  ">
+            <div class="modal-content p-4">
+
+                <div class="modal-header  pb-0">
+                    <h6>Unsubscribe from MySetAside</h6>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body ">
+
+                    <p>To cut down on clutter, you may want to unsubscribe from emails you no longer want to receive.
+                    </p>
+
+                    <div class="row point-contact pt-32">
+                        <div class="col-xl-9 ">
+                            <label for="" class="form-label fw-bold"> Email</label>
+                            <input type="text" class="form-control" placeholder="Please Enter Your Email" name="" id="">
+                        </div>
+                        <div class="col-xl-3 pt-32">
+                            <p class=""> <a href="" type="button" class="btn account-btn fw-bold" id=" "
+                                    > Unsubscribe</a></p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="footer-section footer py-4">
+        <div class="container-fluid">
+            <div class="row py-3">
+
+                <div class="col-xl-6 col-md-9 py-3 py-xl-0 ">
+
+
+                    <ul class="list-unstyled d-flex d-flex flex-column flex-lg-row justify-content-md-between ">
+                        <li><a href=""> Contracts</a></li>
+                        <li><a href=""> Services</a></li>
+                        <li><a href=""> Price List</a></li>
+                        <li><a href=""> FAQ</a></li>
+                        <li><a href=""> Blog</a></li>
+                        <li><a href=""> Resources</a></li>
+                    </ul>
+
+
+
+
+                </div>
+                <div class="col-xl-6">
+                    <ul class="list-unstyled d-flex justify-content-xl-end">
+                        <li> <a href=""> <i class="fa-brands fa-x-twitter fa-xs pe-4"></i></a> </li>
+                        <li> <a href=""><i class="fa-brands fa-facebook-f pe-4"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in pe-4"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-youtube pe-4"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-bottom px-5"></div>
+
+
+
+
+
+
+            <div class="row  pt-4 subfooter">
+
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="row text-start">
+                        <p>Copyright © 2023 MySetAside. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="auto d-flex justify-content-lg-end">
+                        <p class=""><a href="">Sitemap </a> <span class="px-md-1 px-3">|</span><a href="">Refund Policy
+                            </a>
+                            <span class="px-md-1 px-3">|</span>
+                            <a href=""> Terms and Conditions </a> </span><span class="px-md-1 px-3">| </span><a
+                                href="">Privacy
+                                Policy </a>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+</body>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.querySelector('.sidebar');
+    const closeSidebar = document.querySelector('.close-sidebar');
+
+    hamburger.addEventListener('click', () => {
+        const isOpen = sidebar.classList.contains('show-sidebar');
+        if (!isOpen) {
+            sidebar.classList.add('show-sidebar');
+        }
+    });
+
+    closeSidebar.addEventListener('click', () => {
+        sidebar.classList.remove('show-sidebar');
+    });
+
+</script>
+
+ <script>
+    $(document).ready(function () {
+
+        $(".errorMessage").hide();
+
+        $("#submitButton").click(function (event) {
+            event.preventDefault();
+
+
+            $(".required").each(function () {
+                var inputField = $(this);
+                var errorMessage = inputField.next(".errorMessage");
+
+
+                if (inputField.val() == "") {
+
+                    errorMessage.show();
+                    inputField.css("border", "0.5px solid #AF3131");
+                } else {
+
+                    errorMessage.hide();
+                    inputField.css("border", "1px solid #ced4da");
+                }
+            });
+        });
+    });
+</script> 
+</html>

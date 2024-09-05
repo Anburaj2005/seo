@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contract-search</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <section class="header ">
+        <div class="login">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div
+                        class="col-md-8 col-12 text-md-end d-flex align-items-center justify-content-md-end justify-content-center">
+                        <p class="text-white py-2 py-md-0 pe-3 "> Speak with our experts <span class="fw-bold"> 703 -
+                                831-
+                                0705</span>
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-6 px-0">
+                        <button class="text-white register-btn py-2 ">Register</button>
+                    </div>
+                    <div class="col-md-2 col-6  ps-0 pe-lg-2 pe-0 ">
+                        <button class="text-white login-btn py-2">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-xl navbar-light bg-white py-0">
+            <div class="container-fluid ">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.webp" alt="mysetaside" class="" width="155" height="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto pe-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Contracts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Price List</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item pe-0">
+                            <a class="nav-link pe-0" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+
+
+
+    <section class="banner-group ">
+        <div class="container">
+            <div class="row  align-items-center pt-160">
+                <div class="col-xl-7  ">
+                    <h1>Search & Win Contract Opportunities</h1>
+                    <h5 class="fw-normal pt-5">Our contract search feature allows you to access all federal and state
+                        contract opportunities that predominantly helps your small businesses</h5>
+
+                    <p class="pt-4"> <a href="" target="_blank" type="button" class="btn contact-submit px-5 py-3">Win
+                            Contract
+                            Today</a></p>
+                </div>
+                <div class="col-xl-5 d-flex justify-content-center pt-5 pt-xl-0">
+
+                    <div class="trial"></div>
+                    <div class="trial1 px-3">
+                        <div class="text-direction ">
+                            <h6 class="text-center text-white h3  pb-3 fw-bold">Try Our 30 Day <br><span
+                                    class="trial-text fw-bold">Free Trial</span></h6>
+                            <ul class="check-mark list-unstyled  text-light px-3">
+                                <li> <i class="fa-solid fa-check"></i>Free trial with no commitments</li>
+                                <li><i class="fa-solid fa-check"></i>No hidden fees</li>
+                                <li><i class="fa-solid fa-check"></i>Cancel or upgrade at any time.</li>
+                                <li><i class="fa-solid fa-check"></i>Refer your friends and get exclusive offers</li>
+                                <li><i class="fa-solid fa-check"></i>Can get Tax Coupon of 10% to 15% of your filing
+                                    fee.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="pt-160 pb-5 shadow">
+        <div class="container federal-business">
+            <div class="row">
+                <h3 class="fw-bold">Federal Business Opportunities</h3>
+                <p class="py-3">This page shows you full details of an opportunity and allows you to prepare and
+                    submit responses
+                    to
+                    the government agencies</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 pt-4">
+                    <p>NAICS Code</p>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected="">Search by NAICS</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-md-6 pt-4">
+                    <p>Agency</p>
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected="">Search by Agency</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="row  py-4">
+                <div class="col-md-6 pt-3">
+                    <p>Solicitation ID</p>
+                    <input name="Due Date" type="text" class="form-control id-box">
+
+                </div>
+                <div class="col-md-6 pt-3">
+                    <p>Posted Date</p>
+                    <input name="Posted Date" data-date-format="MM/dd/yyyy" max="2024-07-24" type="date"
+                        class="form-control calendar valid">
+
+                    <p class="text-end pt-4"><a href=""><i class="fa-solid fa-table-columns pe-2"></i><span
+                                id="myButton">More Filters </span> </a></p>
+                </div>
+
+            </div>
+
+            <div class="row" id="myDiv">
+                <div class="col-md-6 ">
+                    <p>Due Date</p>
+
+                    <input name="Due Date" data-date-format="MM/dd/yyyy" max="2024-07-24" type="date"
+                        class="form-control calendar valid">
+                </div>
+                <div class="col-md-6 pt-4 pt-md-0">
+                    <p>Posting Type</p>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected="">Posting Type</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row  pt-4" id="myDiv1">
+                <div class="col-md-6">
+                    <p>Full Text Keyword Search in Synopsis/Solicitation Title</p>
+
+                    <div class="input-group search-data py-2">
+
+                        <input type="text" class="form-control id-box border " placeholder="" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12 text-center">
+                    <button class="search-btn px-5 py-2"> <i
+                            class="fa-solid fa-magnifying-glass pe-2"></i>Search</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="pt-160 pt-5">
+        <div class="container">
+          
+                <h6 class="pt-64">Top Opportunities for June 5</h6>
+
+                <div class="border  p-3">
+                    <div class="row">
+                        <div class="col-10">
+                            <p class="title-color fw-bold"><a href=""> DEFENSE LOGISTICS AGENCY </a> </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="border-bottom py-4">
+
+
+                        <div class="row">
+                            <div class="col-12 col-xl-4 ">
+                                <p class="fw-bold">SETASIDE TYPE:<span class="fw-normal"> Award</span></p>
+                            </div>
+                            <div class="col-12 col-xl-4 py-3 py-xl-0">
+                                <p class="fw-bold">
+                                    SOLICITATION ID:<span class="fw-normal"> SPE4A624T13C4</span></p>
+                            </div>
+                            <div class="col-12 col-xl-4 text-xl-end">
+                                <p class="fw-bold">RESPONSE DUE:<span class="fw-normal"> Defense Logistics Agency
+                                        (DLA)</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row py-4">
+                        <p class="fw-bold ">SYNOPSIS:</p>
+                        <p class="py-2">This is a Design-Build, Multiple Award Task Order Contract (MATOC), this is a
+                            five year contract with no option periods awarded to 10 vendors. $25 Million max value
+                            aggregate for all 10 contracts. ....</p>
+                    </div>
+                    <div class="row py-4">
+                        <div class="col-7">
+                            <div class="row">
+                                <div class="col-auto pe-0">
+                                    <p class="pt-4 "> <a href="" target="" type="button" class="btn clear-btn  "> <i
+                                                class="fa-regular fa-floppy-disk pe-2"></i>Save</a></p>
+                                </div>
+                                <div class="col-auto">
+                                    <p class="pt-4 "> <a href="" target="" type="button" class="btn share-btn"><i
+                                                class="fa-solid fa-share-nodes pe-2"></i>Share</a></p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="col-5  d-flex align-items-end d-flex justify-content-end">
+                            <p><a href=""><i class="fa-solid fa-table-columns pe-2"></i>Read full
+                                    Oportunity</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border  p-3">
+                    <div class="row">
+                        <div class="col-10">
+                            <p class="title-color fw-bold"><a href=""> DEFENSE LOGISTICS AGENCY </a> </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="border-bottom py-4">
+
+
+                        <div class="row">
+                            <div class="col-12 col-xl-4 ">
+                                <p class="fw-bold">SETASIDE TYPE:<span class="fw-normal"> Award</span></p>
+                            </div>
+                            <div class="col-12 col-xl-4 py-3 py-xl-0">
+                                <p class="fw-bold">
+                                    SOLICITATION ID:<span class="fw-normal"> SPE4A624T13C4</span></p>
+                            </div>
+                            <div class="col-12 col-xl-4 text-xl-end">
+                                <p class="fw-bold">RESPONSE DUE:<span class="fw-normal"> Defense Logistics Agency
+                                        (DLA)</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row py-4">
+                        <p class="fw-bold ">SYNOPSIS:</p>
+                        <p class="py-2">This is a Design-Build, Multiple Award Task Order Contract (MATOC), this is a
+                            five year contract with no option periods awarded to 10 vendors. $25 Million max value
+                            aggregate for all 10 contracts. ....</p>
+                    </div>
+                    <div class="row py-4">
+                        <div class="col-7">
+                            <div class="row">
+                                <div class="col-auto pe-0">
+                                    <p class="pt-4 "> <a href="" target="" type="button" class="btn clear-btn  "> <i
+                                                class="fa-regular fa-floppy-disk pe-2"></i>Save</a></p>
+                                </div>
+                                <div class="col-auto">
+                                    <p class="pt-4 "> <a href="" target="" type="button" class="btn share-btn"><i
+                                                class="fa-solid fa-share-nodes pe-2"></i>Share</a></p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="col-5  d-flex align-items-end d-flex justify-content-end">
+                            <p><a href=""><i class="fa-solid fa-table-columns pe-2"></i>Read full
+                                    Oportunity</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-64">
+                    <nav class="d-flex justify-content-center">
+                        <ul class="pagination ">
+
+                            <li class="page-item"><a class="page-link circle " href="#"> 1</a></li>
+                            <li class="page-item active">
+                                <a class="page-link circle" href="#">2 </a>
+                            </li>
+                            <li class="page-item"><a class="page-link circle" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link border-0" href="#"> Next <span> <i class="fa-solid fa-chevron-right"></i></span></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="services-search pt-160">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-6 d-flex  align-items-center">
+
+                    <div class="row ">
+                        <img src="./images/signup-bg.webp" class="mw-100">
+                    </div>
+
+                </div>
+                <div class="col-xxl-6 col-xl-6   align-self-center py-5 pb-lg-0 py-xl-0">
+                    <div class="trial-form mx-auto mx-xl-0">
+                        <h4 class="text-center pb-3 fw-bold">Free Trial <span class="text-signup">Sign Up</span>
+                        </h4>
+                        <p class="pb-4">Register with us and win contract opportunities.</p>
+                        <div class="row py-3 ">
+
+                            <div class="col-6 ">
+                                <div class="form-group">
+
+                                    <input name="" type="text" maxlength="100" id="" tabindex="1"
+                                        class="form-control form-color" placeholder="Full Name">
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+
+                                    <input name="" type="text" maxlength="100" id="" tabindex="1"
+                                        class="form-control form-color" placeholder="Title">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row py-3">
+
+                            <div class="col-6 ">
+                                <div class="form-group">
+
+                                    <input name="" type="text" maxlength="100" id="" tabindex="1"
+                                        class="form-control form-color" placeholder="Email">
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+
+                                    <input name="" type="text" maxlength="100" id="" tabindex="1"
+                                        class="form-control form-color" placeholder="Phone Number">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4 mb-lg-5">
+                            <div class="col text-center"> <a class="btn btn-submit rounded-0 px-4 py-3" href=""
+                                    target="_blank">START FREE TRIAL</a> </div>
+                        </div>
+                    </div>
+                    <div class="trial-bg d-none d-xl-block"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="footer-section py-5">
+
+        <div class="container-fluid">
+
+            <div class="row pb-5">
+                <div class="col-xl-5 col-md-4">
+                    <p class="fw-bold"><span> <i class="fa-solid fa-phone pe-2"></i></span><a href="" alt="7038310705">  Tel: 703-831-0705</a></p>
+                    <p class="py-2"><span> <i class="fa-regular fa-envelope pe-3"></i></span><a href="" alt="mail"> info@mysetaside.com</a></p>
+                    <p><span> <i class="fa-regular fa-building pe-3"></i></span> 950 Herndon Parkway #410, Herndon, VA
+                        20170</p>
+                </div>
+                <div class="col-xl-5">
+
+                    <div class="row pt-4 pt-xl-0">
+                        <div class="col-xl-4 col-md-4 pt-3 pt-xl-0">
+                            <p class="fw-bold">What We Offer</p>
+                            <p class="py-2"><a href="">Contracts</a></p>
+                            <p><a href=""> Services</a></p>
+                        </div>
+                        <div class="col-xl-4 col-md-4 pt-3 pt-xl-0">
+                            <p class="fw-bold">More Info</p>
+                            <p class="py-2"><a href="">Price List</a></p>
+                            <p><a href="">FAQ</a></p>
+                        </div>
+                        <div class="col-xl-4 col-md-4 pt-3 pt-xl-0">
+                            <p class="fw-bold">Need Help</p>
+                            <p class="py-2"><a href="">Blog</a></p>
+                            <p><a href=""> Resources</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 d-flex justify-content-xl-end pt-4 pt-xl-0">
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <p class="fw-bold">Follow Us</p>
+
+                            <ul class="list-unstyled d-flex justify-content-end pt-xl-3">
+                                <li> <a href=""> <i class="fa-brands fa-x-twitter fa-xs pe-4"></i></a> </li>
+                                <li> <a href=""><i class="fa-brands fa-facebook-f pe-4"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-linkedin-in pe-4"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-square-youtube pe-4"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="border-bottom px-5"></div>
+
+
+
+
+
+
+            <div class="row  pt-4 subfooter">
+
+                <div class="col-lg-6 col-md-6 ">
+                    <div class="row text-start">
+                        <p>Copyright © 2023 MySetAside. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="auto text-lg-end">
+                        <p class=""><a href="">Sitemap </a> <span class="px-md-1 px-3">|</span><a href="">Refund Policy
+                            </a>
+                            <span class="px-md-1 px-3">|</span>
+                            <a href=""> Terms and Conditions </a> </span><span class="px-md-1 px-3">| </span><a
+                                href="">Privacy
+                                Policy </a>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            $("#myDiv").hide();
+            $("#myDiv1").hide();
+            $("#dv-btn").hide();
+
+            $("#myButton").on("click", function (event) {
+                event.preventDefault();
+                if ($("#myDiv").is(":hidden")) {
+
+                    $("#myDiv").show();
+                    $(this).text("Hide Filters");
+                    $("#myDiv1").show();
+                    $("#dv-btn").show();
+                } else {
+
+                    $("#myDiv").hide();
+                    $(this).text("More Filters");
+                    $("#myDiv1").hide();
+                    $("#dv-btn").hide();
+                }
+            });
+        });
+    </script>
+
+</html>
